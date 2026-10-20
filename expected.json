@@ -1,0 +1,1594 @@
+[
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "13.5",
+   "12"
+  ],
+  "expected": "Hours left: 26.5 of 40 bought, with 13.5 used. Spread over 12 workdays, that is 2.21 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "41",
+   "3"
+  ],
+  "expected": "Hours used: 41 of 40 bought, which is 1 over. Nothing is left to spread over 3 workdays."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "40",
+   "1"
+  ],
+  "expected": "Hours used: 40 of 40 bought, so nothing is left to spread over 1 workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1",
+   "0",
+   "3"
+  ],
+  "expected": "Hours left: 1 of 1 bought, with 0 used. Spread over 3 workdays, that is 0.33 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "0.1",
+   "0",
+   "1"
+  ],
+  "expected": "Hours left: 0.1 of 0.1 bought, with 0 used. Spread over 1 workday, that is 0.1 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "9999.9",
+   "0",
+   "365"
+  ],
+  "expected": "Hours left: 9999.9 of 9999.9 bought, with 0 used. Spread over 365 workdays, that is 27.4 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "9999.9",
+   "9999.9",
+   "1"
+  ],
+  "expected": "Hours used: 9999.9 of 9999.9 bought, so nothing is left to spread over 1 workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "0",
+   "7"
+  ],
+  "expected": "Hours left: 40 of 40 bought, with 0 used. Spread over 7 workdays, that is 5.71 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "39.9",
+   "365"
+  ],
+  "expected": "Hours left: 0.1 of 40 bought, with 39.9 used. Spread over 365 workdays, that is 0 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "100",
+   "33.3",
+   "7"
+  ],
+  "expected": "Hours left: 66.7 of 100 bought, with 33.3 used. Spread over 7 workdays, that is 9.53 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "10",
+   "0",
+   "3"
+  ],
+  "expected": "Hours left: 10 of 10 bought, with 0 used. Spread over 3 workdays, that is 3.33 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "10",
+   "0",
+   "6"
+  ],
+  "expected": "Hours left: 10 of 10 bought, with 0 used. Spread over 6 workdays, that is 1.67 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "2",
+   "1",
+   "3"
+  ],
+  "expected": "Hours left: 1 of 2 bought, with 1 used. Spread over 3 workdays, that is 0.33 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "2.5",
+   "0",
+   "8"
+  ],
+  "expected": "Hours left: 2.5 of 2.5 bought, with 0 used. Spread over 8 workdays, that is 0.31 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "0",
+   "0",
+   "3"
+  ],
+  "expected": "ERR:the hours bought must be a number from 0.1 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "10000",
+   "0",
+   "3"
+  ],
+  "expected": "ERR:the hours bought must be a number from 0.1 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "-1",
+   "3"
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "x",
+   "3"
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "5",
+   "0"
+  ],
+  "expected": "ERR:the workdays left must be a whole number from 1 to 365"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "5",
+   "366"
+  ],
+  "expected": "ERR:the workdays left must be a whole number from 1 to 365"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "5",
+   "2.5"
+  ],
+  "expected": "ERR:the workdays left must be a whole number from 1 to 365"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "5",
+   ""
+  ],
+  "expected": "ERR:the workdays left must be a whole number from 1 to 365"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "",
+   "5",
+   "3"
+  ],
+  "expected": "ERR:the hours bought must be a number from 0.1 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   " 40 ",
+   " 5 ",
+   " 3 "
+  ],
+  "expected": "Hours left: 35 of 40 bought, with 5 used. Spread over 3 workdays, that is 11.67 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "40",
+   "5.55",
+   "3"
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "38",
+   "3.5"
+  ],
+  "expected": "Hours left: 38 at 3.5 hours a workday: that covers 10 full workdays and 3 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "3",
+   "3.5"
+  ],
+  "expected": "Hours left: 3 at 3.5 hours a workday: that covers less than one workday."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "7",
+   "3.5"
+  ],
+  "expected": "Hours left: 7 at 3.5 hours a workday: that covers exactly 2 workdays."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "0",
+   "1"
+  ],
+  "expected": "Hours left: 0 at 1 hour a workday. Nothing is left, so that covers no workdays."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "0.1",
+   "0.1"
+  ],
+  "expected": "Hours left: 0.1 at 0.1 hours a workday: that covers exactly 1 workday."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "9999.9",
+   "0.1"
+  ],
+  "expected": "Hours left: 9999.9 at 0.1 hours a workday: that covers exactly 99999 workdays."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "9999.9",
+   "24"
+  ],
+  "expected": "Hours left: 9999.9 at 24 hours a workday: that covers 416 full workdays and 15.9 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "24",
+   "24"
+  ],
+  "expected": "Hours left: 24 at 24 hours a workday: that covers exactly 1 workday."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "24.1",
+   "24"
+  ],
+  "expected": "Hours left: 24.1 at 24 hours a workday: that covers 1 full workday and 0.1 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "10",
+   "3"
+  ],
+  "expected": "Hours left: 10 at 3 hours a workday: that covers 3 full workdays and 1 hour of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "10",
+   "2.5"
+  ],
+  "expected": "Hours left: 10 at 2.5 hours a workday: that covers exactly 4 workdays."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "1",
+   "1"
+  ],
+  "expected": "Hours left: 1 at 1 hour a workday: that covers exactly 1 workday."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "2",
+   "1"
+  ],
+  "expected": "Hours left: 2 at 1 hour a workday: that covers exactly 2 workdays."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "100",
+   "7.7"
+  ],
+  "expected": "Hours left: 100 at 7.7 hours a workday: that covers 12 full workdays and 7.6 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "0.5",
+   "0.5"
+  ],
+  "expected": "Hours left: 0.5 at 0.5 hours a workday: that covers exactly 1 workday."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "10001",
+   "3"
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "10",
+   "0"
+  ],
+  "expected": "ERR:the hours a workday must be a number from 0.1 to 24 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "10",
+   "24.1"
+  ],
+  "expected": "ERR:the hours a workday must be a number from 0.1 to 24 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "10",
+   "25"
+  ],
+  "expected": "ERR:the hours a workday must be a number from 0.1 to 24 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "x",
+   "3"
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "10",
+   ""
+  ],
+  "expected": "ERR:the hours a workday must be a number from 0.1 to 24 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "-1",
+   "3"
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "10",
+   "3.55"
+  ],
+  "expected": "ERR:the hours a workday must be a number from 0.1 to 24 with up to one decimal"
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   " 38 ",
+   " 3.5 "
+  ],
+  "expected": "Hours left: 38 at 3.5 hours a workday: that covers 10 full workdays and 3 hours of the next one."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "30",
+   "50",
+   "40"
+  ],
+  "expected": "Unused hours: 10. With 50 percent rolling over, 5 hours carry into next month. Added to the 40 bought for next month, that makes 45 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "39.9",
+   "50",
+   "0"
+  ],
+  "expected": "Unused hours: 0.1. With 50 percent rolling over, 0.05 hours carry into next month. Added to the 0 bought for next month, that makes 0.05 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "40",
+   "50",
+   "40"
+  ],
+  "expected": "Nothing is unused, so nothing rolls over. Next month has 40 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "45",
+   "50",
+   "40"
+  ],
+  "expected": "Nothing is unused, so nothing rolls over. Next month has 40 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "0",
+   "100",
+   "0"
+  ],
+  "expected": "Unused hours: 40. With 100 percent rolling over, 40 hours carry into next month. Added to the 0 bought for next month, that makes 40 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "0",
+   "0",
+   "40"
+  ],
+  "expected": "Unused hours: 40. With 0 percent rolling over, 0 hours carry into next month. Added to the 40 bought for next month, that makes 40 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "0",
+   "100",
+   "40"
+  ],
+  "expected": "Unused hours: 40. With 100 percent rolling over, 40 hours carry into next month. Added to the 40 bought for next month, that makes 80 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "10",
+   "33",
+   "40"
+  ],
+  "expected": "Unused hours: 30. With 33 percent rolling over, 9.9 hours carry into next month. Added to the 40 bought for next month, that makes 49.9 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "10",
+   "67",
+   "12.5"
+  ],
+  "expected": "Unused hours: 30. With 67 percent rolling over, 20.1 hours carry into next month. Added to the 12.5 bought for next month, that makes 32.6 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "0.1",
+   "0",
+   "50",
+   "0"
+  ],
+  "expected": "Unused hours: 0.1. With 50 percent rolling over, 0.05 hours carry into next month. Added to the 0 bought for next month, that makes 0.05 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "9999.9",
+   "0",
+   "100",
+   "9999.9"
+  ],
+  "expected": "Unused hours: 9999.9. With 100 percent rolling over, 9999.9 hours carry into next month. Added to the 9999.9 bought for next month, that makes 19999.8 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "7",
+   "3.3",
+   "25",
+   "1"
+  ],
+  "expected": "Unused hours: 3.7. With 25 percent rolling over, 0.93 hours carry into next month. Added to the 1 bought for next month, that makes 1.93 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "7",
+   "3.4",
+   "25",
+   "1"
+  ],
+  "expected": "Unused hours: 3.6. With 25 percent rolling over, 0.9 hours carry into next month. Added to the 1 bought for next month, that makes 1.9 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "1",
+   "0.9",
+   "50",
+   "0"
+  ],
+  "expected": "Unused hours: 0.1. With 50 percent rolling over, 0.05 hours carry into next month. Added to the 0 bought for next month, that makes 0.05 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "0",
+   "0",
+   "50",
+   "40"
+  ],
+  "expected": "ERR:the hours bought must be a number from 0.1 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "30",
+   "101",
+   "40"
+  ],
+  "expected": "ERR:the rollover must be a whole number of percent from 0 to 100"
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "30",
+   "-1",
+   "40"
+  ],
+  "expected": "ERR:the rollover must be a whole number of percent from 0 to 100"
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "30",
+   "5.5",
+   "40"
+  ],
+  "expected": "ERR:the rollover must be a whole number of percent from 0 to 100"
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "30",
+   "x",
+   "40"
+  ],
+  "expected": "ERR:the rollover must be a whole number of percent from 0 to 100"
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "30",
+   "50",
+   "10000"
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "30",
+   "50",
+   ""
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "40",
+   "x",
+   "50",
+   "40"
+  ],
+  "expected": "ERR:the hours must be a number from 0 to 9999.9 with up to one decimal"
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   " 40 ",
+   " 30 ",
+   " 50 ",
+   " 40 "
+  ],
+  "expected": "Unused hours: 10. With 50 percent rolling over, 5 hours carry into next month. Added to the 40 bought for next month, that makes 45 hours."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "850.2",
+   "12.8",
+   "152"
+  ],
+  "expected": "Hours left: 837.4 of 850.2 bought, with 12.8 used. Spread over 152 workdays, that is 5.51 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1009.0",
+   "707.5",
+   "246"
+  ],
+  "expected": "Hours left: 301.5 of 1009 bought, with 707.5 used. Spread over 246 workdays, that is 1.23 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "985.4",
+   "363.4",
+   "269"
+  ],
+  "expected": "Hours left: 622 of 985.4 bought, with 363.4 used. Spread over 269 workdays, that is 2.31 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "50.9",
+   "41.7",
+   "347"
+  ],
+  "expected": "Hours left: 9.2 of 50.9 bought, with 41.7 used. Spread over 347 workdays, that is 0.03 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "342.2",
+   "333.6",
+   "46"
+  ],
+  "expected": "Hours left: 8.6 of 342.2 bought, with 333.6 used. Spread over 46 workdays, that is 0.19 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1494.9",
+   "1232.3",
+   "159"
+  ],
+  "expected": "Hours left: 262.6 of 1494.9 bought, with 1232.3 used. Spread over 159 workdays, that is 1.65 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1050.6",
+   "297.2",
+   "285"
+  ],
+  "expected": "Hours left: 753.4 of 1050.6 bought, with 297.2 used. Spread over 285 workdays, that is 2.64 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1320.8",
+   "893.8",
+   "268"
+  ],
+  "expected": "Hours left: 427 of 1320.8 bought, with 893.8 used. Spread over 268 workdays, that is 1.59 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1595.1",
+   "423.0",
+   "203"
+  ],
+  "expected": "Hours left: 1172.1 of 1595.1 bought, with 423 used. Spread over 203 workdays, that is 5.77 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1786.2",
+   "1126.4",
+   "1"
+  ],
+  "expected": "Hours left: 659.8 of 1786.2 bought, with 1126.4 used. Spread over 1 workday, that is 659.8 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1420.7",
+   "413.7",
+   "47"
+  ],
+  "expected": "Hours left: 1007 of 1420.7 bought, with 413.7 used. Spread over 47 workdays, that is 21.43 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1635.0",
+   "1561.6",
+   "123"
+  ],
+  "expected": "Hours left: 73.4 of 1635 bought, with 1561.6 used. Spread over 123 workdays, that is 0.6 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1987.6",
+   "1777.1",
+   "271"
+  ],
+  "expected": "Hours left: 210.5 of 1987.6 bought, with 1777.1 used. Spread over 271 workdays, that is 0.78 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "538.0",
+   "509.6",
+   "255"
+  ],
+  "expected": "Hours left: 28.4 of 538 bought, with 509.6 used. Spread over 255 workdays, that is 0.11 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "59.0",
+   "5.3",
+   "225"
+  ],
+  "expected": "Hours left: 53.7 of 59 bought, with 5.3 used. Spread over 225 workdays, that is 0.24 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "696.7",
+   "128.1",
+   "354"
+  ],
+  "expected": "Hours left: 568.6 of 696.7 bought, with 128.1 used. Spread over 354 workdays, that is 1.61 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1999.9",
+   "773.4",
+   "357"
+  ],
+  "expected": "Hours left: 1226.5 of 1999.9 bought, with 773.4 used. Spread over 357 workdays, that is 3.44 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1624.2",
+   "283.9",
+   "159"
+  ],
+  "expected": "Hours left: 1340.3 of 1624.2 bought, with 283.9 used. Spread over 159 workdays, that is 8.43 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1116.9",
+   "473.1",
+   "70"
+  ],
+  "expected": "Hours left: 643.8 of 1116.9 bought, with 473.1 used. Spread over 70 workdays, that is 9.2 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "452.5",
+   "105.2",
+   "306"
+  ],
+  "expected": "Hours left: 347.3 of 452.5 bought, with 105.2 used. Spread over 306 workdays, that is 1.13 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1491.6",
+   "1442.1",
+   "184"
+  ],
+  "expected": "Hours left: 49.5 of 1491.6 bought, with 1442.1 used. Spread over 184 workdays, that is 0.27 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1853.6",
+   "35.2",
+   "166"
+  ],
+  "expected": "Hours left: 1818.4 of 1853.6 bought, with 35.2 used. Spread over 166 workdays, that is 10.95 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "75.8",
+   "75.1",
+   "7"
+  ],
+  "expected": "Hours left: 0.7 of 75.8 bought, with 75.1 used. Spread over 7 workdays, that is 0.1 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "423.1",
+   "46.5",
+   "361"
+  ],
+  "expected": "Hours left: 376.6 of 423.1 bought, with 46.5 used. Spread over 361 workdays, that is 1.04 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "854.0",
+   "165.8",
+   "106"
+  ],
+  "expected": "Hours left: 688.2 of 854 bought, with 165.8 used. Spread over 106 workdays, that is 6.49 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "37.1",
+   "2.6",
+   "277"
+  ],
+  "expected": "Hours left: 34.5 of 37.1 bought, with 2.6 used. Spread over 277 workdays, that is 0.12 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1219.8",
+   "917.8",
+   "51"
+  ],
+  "expected": "Hours left: 302 of 1219.8 bought, with 917.8 used. Spread over 51 workdays, that is 5.92 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1682.5",
+   "1357.3",
+   "238"
+  ],
+  "expected": "Hours left: 325.2 of 1682.5 bought, with 1357.3 used. Spread over 238 workdays, that is 1.37 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "765.5",
+   "0.4",
+   "235"
+  ],
+  "expected": "Hours left: 765.1 of 765.5 bought, with 0.4 used. Spread over 235 workdays, that is 3.26 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "144.5",
+   "112.3",
+   "14"
+  ],
+  "expected": "Hours left: 32.2 of 144.5 bought, with 112.3 used. Spread over 14 workdays, that is 2.3 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "928.2",
+   "894.3",
+   "168"
+  ],
+  "expected": "Hours left: 33.9 of 928.2 bought, with 894.3 used. Spread over 168 workdays, that is 0.2 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1963.8",
+   "1670.1",
+   "183"
+  ],
+  "expected": "Hours left: 293.7 of 1963.8 bought, with 1670.1 used. Spread over 183 workdays, that is 1.6 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "1613.4",
+   "408.5",
+   "265"
+  ],
+  "expected": "Hours left: 1204.9 of 1613.4 bought, with 408.5 used. Spread over 265 workdays, that is 4.55 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "398.2",
+   "313.7",
+   "190"
+  ],
+  "expected": "Hours left: 84.5 of 398.2 bought, with 313.7 used. Spread over 190 workdays, that is 0.44 hours a workday."
+ },
+ {
+  "fn": "paceTruth",
+  "args": [
+   "247.7",
+   "26.3",
+   "275"
+  ],
+  "expected": "Hours left: 221.4 of 247.7 bought, with 26.3 used. Spread over 275 workdays, that is 0.81 hours a workday."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "303.7",
+   "9.8"
+  ],
+  "expected": "Hours left: 303.7 at 9.8 hours a workday: that covers 30 full workdays and 9.7 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "488.7",
+   "8.6"
+  ],
+  "expected": "Hours left: 488.7 at 8.6 hours a workday: that covers 56 full workdays and 7.1 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "367.1",
+   "19.6"
+  ],
+  "expected": "Hours left: 367.1 at 19.6 hours a workday: that covers 18 full workdays and 14.3 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "338.6",
+   "11.2"
+  ],
+  "expected": "Hours left: 338.6 at 11.2 hours a workday: that covers 30 full workdays and 2.6 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "54.4",
+   "11.0"
+  ],
+  "expected": "Hours left: 54.4 at 11 hours a workday: that covers 4 full workdays and 10.4 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "289.7",
+   "12.8"
+  ],
+  "expected": "Hours left: 289.7 at 12.8 hours a workday: that covers 22 full workdays and 8.1 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "453.4",
+   "3.9"
+  ],
+  "expected": "Hours left: 453.4 at 3.9 hours a workday: that covers 116 full workdays and 1 hour of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "40.8",
+   "18.3"
+  ],
+  "expected": "Hours left: 40.8 at 18.3 hours a workday: that covers 2 full workdays and 4.2 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "188.5",
+   "21.8"
+  ],
+  "expected": "Hours left: 188.5 at 21.8 hours a workday: that covers 8 full workdays and 14.1 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "335.7",
+   "20.5"
+  ],
+  "expected": "Hours left: 335.7 at 20.5 hours a workday: that covers 16 full workdays and 7.7 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "237.8",
+   "15.8"
+  ],
+  "expected": "Hours left: 237.8 at 15.8 hours a workday: that covers 15 full workdays and 0.8 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "374.3",
+   "14.6"
+  ],
+  "expected": "Hours left: 374.3 at 14.6 hours a workday: that covers 25 full workdays and 9.3 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "97.5",
+   "1.4"
+  ],
+  "expected": "Hours left: 97.5 at 1.4 hours a workday: that covers 69 full workdays and 0.9 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "315.7",
+   "18.7"
+  ],
+  "expected": "Hours left: 315.7 at 18.7 hours a workday: that covers 16 full workdays and 16.5 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "491.5",
+   "10.6"
+  ],
+  "expected": "Hours left: 491.5 at 10.6 hours a workday: that covers 46 full workdays and 3.9 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "266.3",
+   "9.5"
+  ],
+  "expected": "Hours left: 266.3 at 9.5 hours a workday: that covers 28 full workdays and 0.3 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "3.5",
+   "13.2"
+  ],
+  "expected": "Hours left: 3.5 at 13.2 hours a workday: that covers less than one workday."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "450.7",
+   "23.7"
+  ],
+  "expected": "Hours left: 450.7 at 23.7 hours a workday: that covers 19 full workdays and 0.4 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "17.6",
+   "22.1"
+  ],
+  "expected": "Hours left: 17.6 at 22.1 hours a workday: that covers less than one workday."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "168.6",
+   "2.0"
+  ],
+  "expected": "Hours left: 168.6 at 2 hours a workday: that covers 84 full workdays and 0.6 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "312.1",
+   "6.5"
+  ],
+  "expected": "Hours left: 312.1 at 6.5 hours a workday: that covers 48 full workdays and 0.1 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "179.3",
+   "1.7"
+  ],
+  "expected": "Hours left: 179.3 at 1.7 hours a workday: that covers 105 full workdays and 0.8 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "317.2",
+   "6.0"
+  ],
+  "expected": "Hours left: 317.2 at 6 hours a workday: that covers 52 full workdays and 5.2 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "150.7",
+   "4.6"
+  ],
+  "expected": "Hours left: 150.7 at 4.6 hours a workday: that covers 32 full workdays and 3.5 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "216.6",
+   "4.2"
+  ],
+  "expected": "Hours left: 216.6 at 4.2 hours a workday: that covers 51 full workdays and 2.4 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "202.6",
+   "15.4"
+  ],
+  "expected": "Hours left: 202.6 at 15.4 hours a workday: that covers 13 full workdays and 2.4 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "220.0",
+   "4.1"
+  ],
+  "expected": "Hours left: 220 at 4.1 hours a workday: that covers 53 full workdays and 2.7 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "73.0",
+   "1.5"
+  ],
+  "expected": "Hours left: 73 at 1.5 hours a workday: that covers 48 full workdays and 1 hour of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "314.4",
+   "11.1"
+  ],
+  "expected": "Hours left: 314.4 at 11.1 hours a workday: that covers 28 full workdays and 3.6 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "491.7",
+   "2.8"
+  ],
+  "expected": "Hours left: 491.7 at 2.8 hours a workday: that covers 175 full workdays and 1.7 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "358.2",
+   "2.7"
+  ],
+  "expected": "Hours left: 358.2 at 2.7 hours a workday: that covers 132 full workdays and 1.8 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "431.7",
+   "6.1"
+  ],
+  "expected": "Hours left: 431.7 at 6.1 hours a workday: that covers 70 full workdays and 4.7 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "298.9",
+   "14.5"
+  ],
+  "expected": "Hours left: 298.9 at 14.5 hours a workday: that covers 20 full workdays and 8.9 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "331.7",
+   "13.8"
+  ],
+  "expected": "Hours left: 331.7 at 13.8 hours a workday: that covers 24 full workdays and 0.5 hours of the next one."
+ },
+ {
+  "fn": "runoutTruth",
+  "args": [
+   "358.7",
+   "18.5"
+  ],
+  "expected": "Hours left: 358.7 at 18.5 hours a workday: that covers 19 full workdays and 7.2 hours of the next one."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "307.1",
+   "171.6",
+   "77",
+   "1.0"
+  ],
+  "expected": "Unused hours: 135.5. With 77 percent rolling over, 104.34 hours carry into next month. Added to the 1 bought for next month, that makes 105.34 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "96.2",
+   "57.8",
+   "47",
+   "363.6"
+  ],
+  "expected": "Unused hours: 38.4. With 47 percent rolling over, 18.05 hours carry into next month. Added to the 363.6 bought for next month, that makes 381.65 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "385.6",
+   "34.6",
+   "56",
+   "196.5"
+  ],
+  "expected": "Unused hours: 351. With 56 percent rolling over, 196.56 hours carry into next month. Added to the 196.5 bought for next month, that makes 393.06 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "159.6",
+   "16.1",
+   "20",
+   "238.7"
+  ],
+  "expected": "Unused hours: 143.5. With 20 percent rolling over, 28.7 hours carry into next month. Added to the 238.7 bought for next month, that makes 267.4 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "334.2",
+   "259.4",
+   "69",
+   "145.1"
+  ],
+  "expected": "Unused hours: 74.8. With 69 percent rolling over, 51.61 hours carry into next month. Added to the 145.1 bought for next month, that makes 196.71 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "321.0",
+   "228.5",
+   "18",
+   "227.0"
+  ],
+  "expected": "Unused hours: 92.5. With 18 percent rolling over, 16.65 hours carry into next month. Added to the 227 bought for next month, that makes 243.65 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "237.8",
+   "169.4",
+   "21",
+   "258.4"
+  ],
+  "expected": "Unused hours: 68.4. With 21 percent rolling over, 14.36 hours carry into next month. Added to the 258.4 bought for next month, that makes 272.76 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "327.6",
+   "47.9",
+   "12",
+   "171.7"
+  ],
+  "expected": "Unused hours: 279.7. With 12 percent rolling over, 33.56 hours carry into next month. Added to the 171.7 bought for next month, that makes 205.26 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "301.0",
+   "159.7",
+   "27",
+   "391.4"
+  ],
+  "expected": "Unused hours: 141.3. With 27 percent rolling over, 38.15 hours carry into next month. Added to the 391.4 bought for next month, that makes 429.55 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "311.0",
+   "233.5",
+   "60",
+   "316.5"
+  ],
+  "expected": "Unused hours: 77.5. With 60 percent rolling over, 46.5 hours carry into next month. Added to the 316.5 bought for next month, that makes 363 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "55.3",
+   "24.5",
+   "38",
+   "92.7"
+  ],
+  "expected": "Unused hours: 30.8. With 38 percent rolling over, 11.7 hours carry into next month. Added to the 92.7 bought for next month, that makes 104.4 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "321.5",
+   "156.3",
+   "98",
+   "158.8"
+  ],
+  "expected": "Unused hours: 165.2. With 98 percent rolling over, 161.9 hours carry into next month. Added to the 158.8 bought for next month, that makes 320.7 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "165.8",
+   "99.7",
+   "16",
+   "112.4"
+  ],
+  "expected": "Unused hours: 66.1. With 16 percent rolling over, 10.58 hours carry into next month. Added to the 112.4 bought for next month, that makes 122.98 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "312.1",
+   "49.0",
+   "67",
+   "99.0"
+  ],
+  "expected": "Unused hours: 263.1. With 67 percent rolling over, 176.28 hours carry into next month. Added to the 99 bought for next month, that makes 275.28 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "376.8",
+   "162.7",
+   "40",
+   "17.0"
+  ],
+  "expected": "Unused hours: 214.1. With 40 percent rolling over, 85.64 hours carry into next month. Added to the 17 bought for next month, that makes 102.64 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "95.0",
+   "59.7",
+   "12",
+   "377.6"
+  ],
+  "expected": "Unused hours: 35.3. With 12 percent rolling over, 4.24 hours carry into next month. Added to the 377.6 bought for next month, that makes 381.84 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "351.5",
+   "82.0",
+   "4",
+   "331.7"
+  ],
+  "expected": "Unused hours: 269.5. With 4 percent rolling over, 10.78 hours carry into next month. Added to the 331.7 bought for next month, that makes 342.48 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "373.6",
+   "227.7",
+   "90",
+   "373.2"
+  ],
+  "expected": "Unused hours: 145.9. With 90 percent rolling over, 131.31 hours carry into next month. Added to the 373.2 bought for next month, that makes 504.51 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "311.8",
+   "29.6",
+   "31",
+   "29.7"
+  ],
+  "expected": "Unused hours: 282.2. With 31 percent rolling over, 87.48 hours carry into next month. Added to the 29.7 bought for next month, that makes 117.18 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "368.0",
+   "156.1",
+   "17",
+   "61.9"
+  ],
+  "expected": "Unused hours: 211.9. With 17 percent rolling over, 36.02 hours carry into next month. Added to the 61.9 bought for next month, that makes 97.92 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "371.7",
+   "319.4",
+   "65",
+   "386.6"
+  ],
+  "expected": "Unused hours: 52.3. With 65 percent rolling over, 34 hours carry into next month. Added to the 386.6 bought for next month, that makes 420.6 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "285.9",
+   "126.1",
+   "65",
+   "275.0"
+  ],
+  "expected": "Unused hours: 159.8. With 65 percent rolling over, 103.87 hours carry into next month. Added to the 275 bought for next month, that makes 378.87 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "317.3",
+   "67.5",
+   "39",
+   "319.6"
+  ],
+  "expected": "Unused hours: 249.8. With 39 percent rolling over, 97.42 hours carry into next month. Added to the 319.6 bought for next month, that makes 417.02 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "7.9",
+   "1.6",
+   "29",
+   "155.0"
+  ],
+  "expected": "Unused hours: 6.3. With 29 percent rolling over, 1.83 hours carry into next month. Added to the 155 bought for next month, that makes 156.83 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "121.3",
+   "66.2",
+   "16",
+   "135.5"
+  ],
+  "expected": "Unused hours: 55.1. With 16 percent rolling over, 8.82 hours carry into next month. Added to the 135.5 bought for next month, that makes 144.32 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "108.2",
+   "26.7",
+   "49",
+   "54.3"
+  ],
+  "expected": "Unused hours: 81.5. With 49 percent rolling over, 39.94 hours carry into next month. Added to the 54.3 bought for next month, that makes 94.24 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "133.3",
+   "126.7",
+   "25",
+   "185.3"
+  ],
+  "expected": "Unused hours: 6.6. With 25 percent rolling over, 1.65 hours carry into next month. Added to the 185.3 bought for next month, that makes 186.95 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "119.2",
+   "114.5",
+   "75",
+   "278.6"
+  ],
+  "expected": "Unused hours: 4.7. With 75 percent rolling over, 3.53 hours carry into next month. Added to the 278.6 bought for next month, that makes 282.13 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "390.5",
+   "260.3",
+   "76",
+   "237.8"
+  ],
+  "expected": "Unused hours: 130.2. With 76 percent rolling over, 98.95 hours carry into next month. Added to the 237.8 bought for next month, that makes 336.75 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "4.2",
+   "3.7",
+   "33",
+   "220.0"
+  ],
+  "expected": "Unused hours: 0.5. With 33 percent rolling over, 0.17 hours carry into next month. Added to the 220 bought for next month, that makes 220.17 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "223.3",
+   "199.9",
+   "9",
+   "198.6"
+  ],
+  "expected": "Unused hours: 23.4. With 9 percent rolling over, 2.11 hours carry into next month. Added to the 198.6 bought for next month, that makes 200.71 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "34.2",
+   "4.0",
+   "80",
+   "328.8"
+  ],
+  "expected": "Unused hours: 30.2. With 80 percent rolling over, 24.16 hours carry into next month. Added to the 328.8 bought for next month, that makes 352.96 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "342.5",
+   "179.5",
+   "88",
+   "137.0"
+  ],
+  "expected": "Unused hours: 163. With 88 percent rolling over, 143.44 hours carry into next month. Added to the 137 bought for next month, that makes 280.44 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "378.2",
+   "373.3",
+   "59",
+   "60.0"
+  ],
+  "expected": "Unused hours: 4.9. With 59 percent rolling over, 2.89 hours carry into next month. Added to the 60 bought for next month, that makes 62.89 hours."
+ },
+ {
+  "fn": "rolloverTruth",
+  "args": [
+   "343.2",
+   "2.5",
+   "94",
+   "98.3"
+  ],
+  "expected": "Unused hours: 340.7. With 94 percent rolling over, 320.26 hours carry into next month. Added to the 98.3 bought for next month, that makes 418.56 hours."
+ }
+]
